@@ -120,6 +120,8 @@ int main(){
     fstream fout; //for output operations
     // creates a new csv file for output. 
     fout.open("output.csv", ios::out | ios::app); 
+
+    fout<<"Plant_Name"<<","<<"Forecast"<<"\n";
     
     int i = 1; 
     for(auto it:East){
